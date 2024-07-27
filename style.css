@@ -145,7 +145,7 @@ nav .menu li a.active {
     position: relative;
     display: inline-block;
     /* This allows the element to wrap tightly around its content */
-    margin-bottom: 2px;
+    margin-bottom: 30px;
     /* Adjust this value to control space below the entire title+line combo */
 }
 
@@ -173,7 +173,7 @@ nav .menu li a.active {
     margin-top: 25px;
     margin-bottom: 5px;
     color: #696969;
-    font-size: 16px;
+    font-size: 14px;
     /* Adjust size as needed */
     max-width: 1200px;
     /* Limit width for better readability on wide screens */

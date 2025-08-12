@@ -460,3 +460,38 @@ footer {
 #resume .resume-content {
     animation-delay: 0.3s;
 }
+
+/* Update the existing .social-links rule by adding align-items */
+.social-links {
+    display: flex;
+    align-items: center;
+    /* ADD THIS LINE */
+}
+
+/* Update the existing .social-icon rule by adding these properties */
+.social-icon {
+    margin-left: 15px;
+    color: #6f6f6f;
+    font-size: 18px;
+    transition: color 0.3s;
+    /* ADD THESE LINES BELOW */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+}
+
+/* ADD THESE NEW RULES at the end of your CSS file */
+
+/* Fix for Credly icon alignment */
+.social-icon img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+/* Hover effect for Credly icon to match theme color */
+.social-icon:hover img {
+    filter: brightness(0) saturate(100%) invert(64%) sepia(76%) saturate(466%) hue-rotate(131deg) brightness(91%) contrast(86%);
+}

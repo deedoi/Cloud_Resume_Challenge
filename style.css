@@ -478,14 +478,16 @@ footer {
 
 /* ADD THESE NEW RULES at the end of your CSS file */
 
-/* Fix for Credly icon alignment */
+/* Fix for Credly icon alignment and initial grayscale to match other icons */
 .social-icon img {
     width: 18px;
     height: 18px;
     object-fit: contain;
+    filter: grayscale(1) brightness(0.6); /* Matches the #6f6f6f grey of other icons */
+    transition: filter 0.3s;
 }
 
-/* Hover effect for Credly icon to match theme color */
+/* Hover effect for Credly icon to match the #34b7a7 theme color */
 .social-icon:hover img {
     filter: brightness(0) saturate(100%) invert(64%) sepia(76%) saturate(466%) hue-rotate(131deg) brightness(91%) contrast(86%);
 }

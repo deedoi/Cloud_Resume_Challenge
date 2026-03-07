@@ -483,11 +483,11 @@ footer {
     width: 18px;
     height: 18px;
     object-fit: contain;
-    filter: grayscale(1) brightness(0.6); /* Matches the #6f6f6f grey of other icons */
+    filter: grayscale(100%) brightness(0.8); /* Matches the grey of other icons while preserving contrast */
     transition: filter 0.3s;
 }
 
-/* Hover effect for Credly icon to match the #34b7a7 theme color */
+/* Hover effect for Credly icon: uses sepia + hue-rotate to reach #34b7a7 while preserving the 'C' visibility */
 .social-icon:hover img {
-    filter: brightness(0) saturate(100%) invert(64%) sepia(76%) saturate(466%) hue-rotate(131deg) brightness(91%) contrast(86%);
+    filter: sepia(100%) hue-rotate(130deg) saturate(400%) brightness(0.8);
 }

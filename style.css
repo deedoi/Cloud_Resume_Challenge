@@ -83,23 +83,18 @@ nav .menu li a.active {
     /* Reduce top padding */
 }
 
-.mountain-image {
-    width: auto;
-    height: 268px;
-    margin-bottom: -90px;
+.mountain-svg {
+    width: 360px;
+    height: auto;
+    margin-bottom: 20px;
 }
 
 #hero h1 {
-    font-size: 48px;
-    font-weight: 700;
-    color: #222222;
-    margin-bottom: 5px;
-}
-
-#hero h2 {
-    font-size: 24px;
+    font-size: 38px;
+    font-weight: 600;
     color: #6f6f6f;
-    margin-bottom: 120px;
+    margin-top: -10px; /* Moves it slightly up towards the mountain */
+    margin-bottom: 25px; /* Centers it better between mountain and button */
 }
 
 #view-counter {
@@ -112,7 +107,7 @@ nav .menu li a.active {
     display: inline-block;
     background-color: #34b7a7;
     color: #fff;
-    padding: 0.3px 33px;
+    padding: 10px 40px; /* Fixed padding for better look */
     border-radius: 70px;
     text-decoration: none;
     font-weight: 600;
@@ -422,9 +417,8 @@ footer {
     }
 }
 
-#hero .mountain-image,
+#hero .mountain-svg,
 #hero h1,
-#hero h2,
 #hero .btn-about {
     opacity: 0;
     animation: fallIn 0.8s ease-out forwards;

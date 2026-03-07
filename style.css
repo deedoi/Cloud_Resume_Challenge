@@ -83,23 +83,18 @@ nav .menu li a.active {
     /* Reduce top padding */
 }
 
-.mountain-image {
-    width: auto;
-    height: 268px;
-    margin-bottom: -90px;
+.mountain-svg {
+    width: 360px;
+    height: auto;
+    margin-bottom: 20px;
 }
 
 #hero h1 {
-    font-size: 48px;
-    font-weight: 700;
-    color: #222222;
-    margin-bottom: 5px;
-}
-
-#hero h2 {
-    font-size: 24px;
+    font-size: 38px;
+    font-weight: 600;
     color: #6f6f6f;
-    margin-bottom: 120px;
+    margin-top: -10px; /* Moves it slightly up towards the mountain */
+    margin-bottom: 25px; /* Centers it better between mountain and button */
 }
 
 #view-counter {
@@ -112,7 +107,7 @@ nav .menu li a.active {
     display: inline-block;
     background-color: #34b7a7;
     color: #fff;
-    padding: 0.3px 33px;
+    padding: 10px 40px; /* Fixed padding for better look */
     border-radius: 70px;
     text-decoration: none;
     font-weight: 600;
@@ -422,9 +417,8 @@ footer {
     }
 }
 
-#hero .mountain-image,
+#hero .mountain-svg,
 #hero h1,
-#hero h2,
 #hero .btn-about {
     opacity: 0;
     animation: fallIn 0.8s ease-out forwards;
@@ -459,4 +453,39 @@ footer {
 
 #resume .resume-content {
     animation-delay: 0.3s;
+}
+
+/* Update the existing .social-links rule by adding align-items */
+.social-links {
+    display: flex;
+    align-items: center;
+    /* ADD THIS LINE */
+}
+
+/* Update the existing .social-icon rule by adding these properties */
+.social-icon {
+    margin-left: 15px;
+    color: #6f6f6f;
+    font-size: 18px;
+    transition: color 0.3s;
+    /* ADD THESE LINES BELOW */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+}
+
+/* ADD THESE NEW RULES at the end of your CSS file */
+
+/* Fix for Credly icon alignment */
+.social-icon img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+/* Hover effect for Credly icon to match theme color */
+.social-icon:hover img {
+    filter: brightness(0) saturate(100%) invert(64%) sepia(76%) saturate(466%) hue-rotate(131deg) brightness(91%) contrast(86%);
 }
